@@ -6,5 +6,6 @@
 		<li>email: pathonscript@gmail.com</li>
 		<li><a href="https://github.com/PatatoBit" target="_blank">github</a></li>
 		<li><a href="https://twitter.com/patatobit" target="_blank">twitter</a></li>
+		<li><a href="https://www.linkedin.com/in/patato/" target="_blank">linkedin</a></li>
 	</ul>
 </main>
