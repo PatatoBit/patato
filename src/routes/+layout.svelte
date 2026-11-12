@@ -11,7 +11,7 @@
 	<title>pat · chayapat pakham</title>
 	<meta
 		name="description"
-		content="Pat (Chayapat Pakham) — web developer, artist, and student from Thailand. Swift Student Challenge winner."
+		content="Pat (Chayapat Pakham): web developer, artist and student from Thailand. Swift Student Challenge winner"
 	/>
 
 	<!-- Facebook Meta Tags -->
@@ -20,7 +20,7 @@
 	<meta property="og:title" content="pat · chayapat pakham" />
 	<meta
 		property="og:description"
-		content="Web developer, artist, and student from Thailand. Swift Student Challenge winner."
+		content="Web developer, artist and student from Thailand. Swift Student Challenge winner"
 	/>
 	<meta property="og:image" content="YOUR_IMAGE_URL_HERE" />
 
@@ -31,7 +31,7 @@
 	<meta name="twitter:title" content="pat · chayapat pakham" />
 	<meta
 		name="twitter:description"
-		content="Web developer, artist, and student from Thailand. Swift Student Challenge winner."
+		content="Web developer, artist and student from Thailand. Swift Student Challenge winner"
 	/>
 	<meta name="twitter:image" content="YOUR_IMAGE_URL_HERE" />
 </svelte:head>
