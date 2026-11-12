@@ -104,6 +104,39 @@ a {
 	letter-spacing: 0.01em;
 }
 
+.local-time {
+	position: relative;
+	cursor: default;
+	border-bottom: 1px dotted color-mix(in oklch, var(--muted) 55%, transparent);
+	font-variant-numeric: tabular-nums;
+
+	&::after {
+		content: attr(data-tooltip);
+		position: absolute;
+		left: 50%;
+		bottom: calc(100% + 0.45rem);
+		transform: translateX(-50%) translateY(0.15rem);
+		padding: 0.28rem 0.5rem;
+		border-radius: 0.3rem;
+		background: var(--ink);
+		color: var(--desk);
+		font-size: 0.7rem;
+		letter-spacing: 0.01em;
+		white-space: nowrap;
+		opacity: 0;
+		pointer-events: none;
+		transition:
+			opacity 120ms ease,
+			transform 120ms ease;
+	}
+
+	&:hover::after,
+	&:focus-visible::after {
+		opacity: 1;
+		transform: translateX(-50%) translateY(0);
+	}
+}
+
 h1 {
 	font-size: clamp(1.85rem, 4vw, 2.35rem);
 	font-weight: 700;

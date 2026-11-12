@@ -1,11 +1,38 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import avatar from '$lib/assets/avatar.jpg';
+
+	const TIMEZONE = 'Asia/Bangkok';
+
+	let time = $state('');
+
+	function formatTime(date: Date) {
+		return new Intl.DateTimeFormat('en-GB', {
+			timeZone: TIMEZONE,
+			hour: '2-digit',
+			minute: '2-digit',
+			hour12: false
+		}).format(date);
+	}
+
+	onMount(() => {
+		const tick = () => {
+			time = formatTime(new Date());
+		};
+
+		tick();
+		const id = setInterval(tick, 1000);
+		return () => clearInterval(id);
+	});
 </script>
 
 <main class="wrapper">
 	<header class="intro">
 		<img class="avatar" src={avatar} alt="Pat" width="88" height="88" />
-		<p class="eyebrow">Chayapat Pakham · Thailand</p>
+		<p class="eyebrow">
+			Chayapat Pakham · Thailand{#if time}
+				{' · '}<span class="local-time" data-tooltip={TIMEZONE}>{time}</span>{/if}
+		</p>
 		<h1>Hi, I'm Pat</h1>
 		<p class="bio">
 			I'm a <strong>web developer</strong>, artist and student who likes making things that feel
