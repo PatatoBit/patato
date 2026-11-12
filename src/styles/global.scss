@@ -87,6 +87,16 @@ a {
 	margin-bottom: 2.75rem;
 }
 
+.avatar {
+	display: block;
+	width: 5.5rem;
+	height: 5.5rem;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center 20%;
+	margin-bottom: 1.25rem;
+}
+
 .eyebrow {
 	font-size: 0.8rem;
 	color: var(--muted);
