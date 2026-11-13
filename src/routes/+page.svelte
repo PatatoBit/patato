@@ -35,11 +35,32 @@
 		</p>
 		<h1>Hi, I'm Pat</h1>
 		<p class="bio">
-			I'm a <strong>web developer</strong>, artist and student who likes making things that feel
-			fun to use. Started in game dev, wandered through Machine Learning and apps, and landed on
-			the web, where I've stayed
+			I'm a <strong>web developer</strong>, artist and student who likes making things that feel fun
+			to use. Started in game dev, wandered through Machine Learning and apps, and landed on the
+			web, where I've stayed
 		</p>
 	</header>
+
+	<section class="section" aria-labelledby="wayauto-heading">
+		<h2 id="wayauto-heading">apps</h2>
+		<a class="wayauto-feature" href="https://wayauto.app" target="_blank" rel="noopener">
+			<img
+				class="wayauto-icon"
+				src="/wayauto-icon.png"
+				alt="WayAuto app icon"
+				width="72"
+				height="72"
+			/>
+			<span class="wayauto-copy">
+				<span class="wayauto-title">WayAuto</span>
+				<span class="wayauto-desc"
+					>A driving log that keeps itself. A simple app that records every trip in the background
+					so you can just drive.</span
+				>
+				<span class="wayauto-link-label">wayauto.app</span>
+			</span>
+		</a>
+	</section>
 
 	<section class="section" aria-labelledby="contact-heading">
 		<h2 id="contact-heading">Say hi</h2>
