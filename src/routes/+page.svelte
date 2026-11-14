@@ -35,7 +35,7 @@
 		</p>
 		<h1>Hi, I'm Pat</h1>
 		<p class="bio">
-			I'm a <strong>web developer</strong>, artist and student who likes making things that feel fun
+			I'm a <strong>developer</strong>, artist and student who likes making things that feel fun
 			to use. Started in game dev, wandered through Machine Learning and apps, and landed on the
 			web, where I've stayed
 		</p>
